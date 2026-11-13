@@ -5,6 +5,7 @@ import { Search, Trophy } from "lucide-react";
 import heroImg from "@/assets/hero-graduation.jpg";
 import logoImg from "@/assets/logo.png";
 import { Navbar } from "@/components/grad/Navbar";
+import { Footer } from "@/components/grad/Footer";
 import { WinnerCategory } from "@/components/grad/WinnerCategory";
 import { Registration } from "@/components/grad/Registration";
 import { awardCategories } from "@/data/awardCategories";
@@ -24,7 +25,7 @@ export const Route = createFileRoute("/")({
   component: Index,
 });
 
-const NAV_LINKS = [["Home", "#home"], ["Award Categories", "#categories"], ["Winners", "#winners"], ["Register", "#register"], ["Organizer", "#organizer"]] as const;
+const NAV_LINKS = [["Home", "#home"], ["Award Categories", "#categories"], ["Winners", "#winners"], ["Register", "#register"]] as const;
 
 function Particles() {
   return (
@@ -73,7 +74,6 @@ function Index() {
           <p className="mx-auto mt-6 max-w-2xl text-lg text-muted-foreground">
             Celebrating the creators who turned AI skills into standout content — across {awardCategories.length} award categories.
           </p>
-          <p className="mt-3 text-sm">Developed and Run by <span className="text-gold">Nikeelu Gunda</span></p>
           <div className="mt-10 flex flex-wrap justify-center gap-4">
             <a href="#winners" className="rounded-full bg-gold-gradient px-7 py-3 font-semibold text-accent-foreground shadow-gold transition-transform hover:scale-105">Explore Our Winners</a>
             <a href="#categories" className="rounded-full border border-primary/60 bg-brand-gradient px-7 py-3 font-semibold shadow-glow transition-transform hover:scale-105">Award Categories</a>
@@ -133,22 +133,7 @@ function Index() {
       {/* Registration & Payment */}
       <Registration />
 
-      {/* Organizer */}
-      <section id="organizer" className="mx-auto max-w-5xl px-4 py-24">
-        <div className="glass relative overflow-hidden rounded-3xl p-10 text-center md:p-16">
-          <div className="absolute inset-0 bg-brand-gradient opacity-10" />
-          <p className="relative mb-3 text-sm uppercase tracking-[0.3em] text-gold">Organizer</p>
-          <img src={logoImg} alt="Super AI Academy" width={595} height={162} loading="lazy" className="relative mx-auto h-16 w-auto md:h-20" />
-          <p className="relative mx-auto mt-4 max-w-2xl text-muted-foreground">
-            Empowering Telugu-speaking learners with AI knowledge and hands-on skills. The Telugu AI Bootcamp is developed and run by
-          </p>
-          <p className="relative mt-3 font-display text-2xl font-bold text-gold-gradient">Nikeelu Gunda</p>
-        </div>
-      </section>
-
-      <footer className="border-t border-border py-8 text-center text-sm text-muted-foreground">
-        © 2026 Super AI Academy · Telugu AI Bootcamp Social Media Contest Winners
-      </footer>
+      <Footer links={NAV_LINKS} />
     </div>
   );
 }
