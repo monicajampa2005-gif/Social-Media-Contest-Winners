@@ -83,12 +83,12 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
       { name: "viewport", content: "width=device-width, initial-scale=1" },
       { title: "Telugu AI Bootcamp – Graduation Day 2026" },
       { name: "description", content: "Official graduation celebration of the Telugu AI Bootcamp by Super AI Academy." },
-      { name: "author", content: "Lovable" },
+      { name: "author", content: "Super AI Academy" },
       { property: "og:title", content: "Telugu AI Bootcamp – Graduation Day 2026" },
       { property: "og:description", content: "Official graduation celebration of the Telugu AI Bootcamp by Super AI Academy." },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary_large_image" },
-      { name: "twitter:site", content: "@Lovable" },
+      { name: "twitter:site", content: "@SuperAIAcademy" },
     ],
     links: [
       {
@@ -98,7 +98,7 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
       { rel: "preconnect", href: "https://fonts.googleapis.com" },
       { rel: "preconnect", href: "https://fonts.gstatic.com", crossOrigin: "anonymous" },
       { rel: "stylesheet", href: "https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Space+Grotesk:wght@500;700&display=swap" },
-      { rel: "icon", href: "/favicon.ico", type: "image/x-icon" },
+      { rel: "icon", href: "/favicon.png", type: "image/png" },
     ],
   }),
   shellComponent: RootShell,
