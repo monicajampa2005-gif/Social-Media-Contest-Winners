@@ -4,7 +4,7 @@ import logoImg from "@/assets/logo.png";
 
 type NavLink = readonly [label: string, href: string];
 
-export function Navbar({ links, cta }: { links: readonly NavLink[]; cta: NavLink }) {
+export function Navbar({ links, cta }: { links: readonly NavLink[]; cta?: NavLink }) {
   const [open, setOpen] = useState(false);
   return (
     <header className="fixed inset-x-0 top-0 z-50 glass">
@@ -15,13 +15,13 @@ export function Navbar({ links, cta }: { links: readonly NavLink[]; cta: NavLink
         <ul className="hidden items-center gap-5 text-sm lg:flex">
           {links.map(([l, h]) => <li key={h}><a href={h} className="text-muted-foreground transition-colors hover:text-foreground">{l}</a></li>)}
         </ul>
-        <a href={cta[1]} className="hidden rounded-full bg-gold-gradient px-4 py-2 text-sm font-semibold text-accent-foreground shadow-gold lg:inline-block">{cta[0]}</a>
+        {cta && <a href={cta[1]} className="hidden rounded-full bg-gold-gradient px-4 py-2 text-sm font-semibold text-accent-foreground shadow-gold lg:inline-block">{cta[0]}</a>}
         <button className="lg:hidden" aria-label="Menu" onClick={() => setOpen(!open)}>{open ? <X /> : <Menu />}</button>
       </nav>
       {open && (
         <ul className="flex flex-col gap-1 border-t border-border px-4 py-3 lg:hidden">
           {links.map(([l, h]) => <li key={h}><a onClick={() => setOpen(false)} href={h} className="block py-2 text-muted-foreground">{l}</a></li>)}
-          <li><a onClick={() => setOpen(false)} href={cta[1]} className="mt-2 block rounded-full bg-gold-gradient px-4 py-2 text-center font-semibold text-accent-foreground">{cta[0]}</a></li>
+          {cta && <li><a onClick={() => setOpen(false)} href={cta[1]} className="mt-2 block rounded-full bg-gold-gradient px-4 py-2 text-center font-semibold text-accent-foreground">{cta[0]}</a></li>}
         </ul>
       )}
     </header>

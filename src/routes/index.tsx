@@ -7,7 +7,6 @@ import logoImg from "@/assets/logo.png";
 import { Navbar } from "@/components/grad/Navbar";
 import { Footer } from "@/components/grad/Footer";
 import { WinnerCategory } from "@/components/grad/WinnerCategory";
-import { Registration } from "@/components/grad/Registration";
 import { awardCategories } from "@/data/awardCategories";
 import { winners, winnerCount } from "@/data/winners";
 
@@ -25,7 +24,7 @@ export const Route = createFileRoute("/")({
   component: Index,
 });
 
-const NAV_LINKS = [["Home", "#home"], ["Award Categories", "#categories"], ["Winners", "#winners"], ["Register", "#register"]] as const;
+const NAV_LINKS = [["Home", "#home"], ["Award Categories", "#categories"], ["Winners", "#winners"]] as const;
 
 function Particles() {
   return (
@@ -58,7 +57,7 @@ function Index() {
 
   return (
     <div className="min-h-screen">
-      <Navbar links={NAV_LINKS} cta={["Register & Pay", "#register"]} />
+      <Navbar links={NAV_LINKS} />
 
       {/* Hero */}
       <section id="home" className="relative flex min-h-screen items-center overflow-hidden pt-20">
@@ -77,7 +76,6 @@ function Index() {
           <div className="mt-10 flex flex-wrap justify-center gap-4">
             <a href="#winners" className="rounded-full bg-gold-gradient px-7 py-3 font-semibold text-accent-foreground shadow-gold transition-transform hover:scale-105">Explore Our Winners</a>
             <a href="#categories" className="rounded-full border border-primary/60 bg-brand-gradient px-7 py-3 font-semibold shadow-glow transition-transform hover:scale-105">Award Categories</a>
-            <a href="#register" className="rounded-full border border-gold/60 px-7 py-3 font-semibold text-gold transition-all hover:scale-105 hover:bg-gold hover:text-accent-foreground">Register &amp; Pay</a>
           </div>
           <p className="mt-10 font-display text-xl"><span className="text-gold-gradient font-bold">{winners.length} Winners</span> <span className="text-muted-foreground">|</span> <span className="text-brand-gradient font-bold">{awardCategories.length} Award Categories</span></p>
         </div>
@@ -129,9 +127,6 @@ function Index() {
           {!filtered.length && <p className="text-center text-muted-foreground">No winners match "{query}".</p>}
         </div>
       </section>
-
-      {/* Registration & Payment */}
-      <Registration />
 
       <Footer links={NAV_LINKS} />
     </div>
