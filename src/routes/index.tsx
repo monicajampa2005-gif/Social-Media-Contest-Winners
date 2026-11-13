@@ -110,7 +110,7 @@ function Index() {
       {/* Winners */}
       <section id="winners" className="mx-auto max-w-7xl px-4 py-24">
         <SectionTitle eyebrow="Winners Showcase" title="Meet Our Champions" sub="Every achievement tells a story. Every winner represents creativity, dedication, and the courage to innovate." />
-        <div className="sticky top-16 z-30 mb-10 glass rounded-2xl p-3">
+        <div className="mb-10 glass rounded-2xl p-3">
           <div className="relative mb-3">
             <Search className="absolute left-3 top-1/2 h-4 w-4 -translate-y-1/2 text-muted-foreground" />
             <input value={query} onChange={(e) => setQuery(e.target.value)} placeholder="Search winners by name..." className="w-full rounded-xl border border-input bg-background/60 py-2 pl-9 pr-3 text-sm outline-none focus:border-gold" />
