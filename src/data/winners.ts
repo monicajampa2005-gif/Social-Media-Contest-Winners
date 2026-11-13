@@ -35,7 +35,7 @@ const realWinners: Record<string, RealWinner[]> = {
     w("Swapna Priya", "swapna-priya.jpg"),
     w("Shanthi Sri Yelamanchili", "shanthi-sri-yelamanchili.jpg"),
     w("Suneetha Kalyan", "suneetha-kalyan.jpg"),
-    w("Rrrd 1407", "rrrd-1407.jpg"),
+    w("D Rekha", "rrrd-1407.jpg"),
   ],
   "Viral Content Champion Award": [
     w("Sudharani Konduru", "sudharani-konduru.jpg"),
