@@ -35,7 +35,7 @@ const realWinners: Record<string, RealWinner[]> = {
     w("Swapna Priya", "swapna-priya.jpg"),
     w("Shanthi Sri Yelamanchili", "shanthi-sri-yelamanchili.jpg"),
     w("Suneetha Kalyan", "suneetha-kalyan.jpg"),
-    w("Rrrd 1407", "rrrd-1407.jpg"),
+    w("D Rekha", "rrrd-1407.jpg"),
   ],
   "Viral Content Champion Award": [
     w("Sudharani Konduru", "sudharani-konduru.jpg"),
@@ -56,13 +56,13 @@ const realWinners: Record<string, RealWinner[]> = {
     w("M. Rajasekhar", "m-rajasekhar.jpg"),
     w("Ganesh Katta", "ganesh-katta.jpg"),
     w("S. Praveena", "s-praveena.jpg"),
-    w("V Sridevi", "v-sridevi.jpg"),
+    w("V Sridevi", "v-sridevi.jpeg"),
   ],
   "Consistency Champion Award": [
     w("Bairapaka Vallypadmini", "bairapaka-vallypadmini.jpg"),
     w("Jyothi Gullapelli", "jyothi-gullapelli.jpg"),
     w("Manjula Rajashekaruni", "manjula-rajashekaruni.jpg"),
-    w("Prasanna Devi R", "prasanna-devi-r.jpg"),
+    w("Prasanna Devi R", "prasanna-devi-r.jpeg"),
     w("Gurram Krishnaveni", "gurram-krishnaveni.jpg"),
     w("Vishnupriya Karri", "vishnupriya-karri.jpg"),
     w("Narayanamma", "narayanamma.jpg"),
@@ -113,7 +113,7 @@ const realWinners: Record<string, RealWinner[]> = {
     w("Nagalakshmi Penugondla", "nagalakshmi-penugondla.jpg"),
     w("K. Sri Latha Reddy", "k-sri-latha-reddy.jpg"),
     w("G. Bhavitha", "g-bhavitha.jpg"),
-    w("G. Prietthi", ""),
+    w("G. Preethi", "G.Preethi.jpeg"),
   ],
   "AI Creative Genius Award": [
     w("Srilakshmi Bedamsetty", "srilakshmi-bedamsetty.jpg"),
