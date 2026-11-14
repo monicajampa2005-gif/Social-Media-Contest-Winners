@@ -158,7 +158,7 @@ const realWinners: Record<string, RealWinner[]> = {
     w("Radha Madugupalli", "radha-madugupalli.jpg"),
     w("V Vasantha", "v-vasantha.jpg"),
     w("Sridevi Velagandula", "sridevi-velagandula.jpg"),
-    w("Kalyani Mittapally", ""),
+    w("Kalyani Mittapally", "kalyani.jpg"),
     w("T V V Meenakshi", "t-v-v-meenakshi.jpg"),
     w("Martha Swapna", "martha-swapna.jpg"),
     w("Inner Soul Glow by Suvarna", "inner-soul-glow-by-suvarna.jpg"),
