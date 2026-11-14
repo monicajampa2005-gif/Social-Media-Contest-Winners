@@ -168,6 +168,7 @@ const realWinners: Record<string, RealWinner[]> = {
     w("Radha Madugupalli", "radha-madugupalli.jpg"),
     w("V Vasantha", "v-vasantha.jpg"),
     w("Sridevi Velagandula", "sridevi-velagandula.jpg"),
+    w("Kalyani Mittapally", "kalyani.jpg"),
   ],
   "AI-Powered Personal Creator Award": [
     w("Bandari Sowjanya", "bandari-sowjanya.jpg"),
